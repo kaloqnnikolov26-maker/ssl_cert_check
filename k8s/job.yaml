@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cert-checker
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      containers:
+      - name: cert-checker
+        image: cert-checker:latest
+        imagePullPolicy: Never
+      restartPolicy: Never
