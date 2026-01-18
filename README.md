@@ -17,6 +17,8 @@ A portable Bash-based tool to check SSL/TLS certificate expiration dates for a l
 
 git clone https://github.com/kaloqnnikolov26-maker/SSL_cert_check
 
+
 docker build -t SSL_cert_check .
+
 docker run --rm SSL_cert_check
 
