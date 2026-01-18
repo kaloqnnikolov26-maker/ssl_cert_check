@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONFIG_FILE="websites.conf"
+CONFIG_FILE="${CONFIG_FILE:-websites.conf}"
 
-WARN_DAYS=30
-CRIT_DAYS=7
+WARN_DAYS="${WARN_DAYS:-30}"
+CRIT_DAYS="${CRIT_DAYS:-7}"
 
 if [[ ! -f "$CONFIG_FILE" ]]; then
-  echo "Config file not found: $CONFIG_FILE"
+  echo "ERROR: Config file not found: $CONFIG_FILE"
   exit 1
 fi
 
-echo "Checking SSL certificate expiration dates"
-echo "----------------------------------------"
+echo "SSL Certificate Expiry Check"
+echo "============================"
 
 while read -r HOST; do
   [[ -z "$HOST" ]] && continue
@@ -52,3 +52,4 @@ while read -r HOST; do
 
   echo ""
 done < "$CONFIG_FILE"
+
