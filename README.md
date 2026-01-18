@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# # SSL Certificate Expiry Checker
-=======
+
 # SSL Certificate Expiry Checker
->>>>>>> e4505a6 (Initial commit: SSL certificate expiry checker)
 
 A portable Bash-based tool to check SSL/TLS certificate expiration dates for a list of websites.
 
@@ -18,17 +15,8 @@ A portable Bash-based tool to check SSL/TLS certificate expiration dates for a l
 
 ## Local Docker Usage
 
-```bash
-<<<<<<< HEAD
-git clone https://github.com/kaloqnnikolov26-maker/cert-expiry-checker.git
-=======
-git clone https://github.com/<your-username>/cert-expiry-checker.git
->>>>>>> e4505a6 (Initial commit: SSL certificate expiry checker)
-cd cert-expiry-checker
+git clone https://github.com/kaloqnnikolov26-maker/SSL_cert_check
 
-docker build -t cert-expiry-checker .
-docker run --rm cert-expiry-checker
-<<<<<<< HEAD
-=======
+docker build -t SSL_cert_check .
+docker run --rm SSL_cert_check
 
->>>>>>> e4505a6 (Initial commit: SSL certificate expiry checker)
